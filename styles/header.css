@@ -1,0 +1,53 @@
+.header {
+    position: fixed;
+    top:0;
+    left: auto;
+    right: auto;
+    width: 100%;
+    padding: 32px 160px;
+    display: flex;
+    gap:165px;
+    align-items: center;
+    color: white;
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+  }
+
+  .header.scrolled {
+    background-color: #222222; 
+    z-index: 1;
+  }
+
+  .header__title {
+    font-size: 36px;
+  }
+
+  @media only screen and (max-width: 1520px) {
+    .header {
+      padding: 28px 100px;
+      gap: 100px;
+    }
+
+    .header__title {
+      font-size: 28px;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .header {
+      padding: 28px 60px;
+      gap: 80px;
+    }
+
+    .header__title {
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .header {
+      padding: 24px 24px;
+      padding-left: 24px;
+      gap: 20px;
+    }
+  }

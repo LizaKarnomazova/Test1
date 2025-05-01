@@ -1,0 +1,145 @@
+.hero {
+    display: grid;
+    grid-template-columns: auto 40%;
+    gap: 40px;
+    align-items: end;
+    height: fit-content;
+    color: white;
+    background-color: #222222;
+  }
+
+  .hero__content {
+    padding-left: 160px;
+    padding-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .hero__title {
+    font-size: 80px;
+  }
+
+  .hero__subtitle {
+    font-size: 32px;
+  }
+
+  .hero__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .hero__item {
+    padding-right: 20px;
+    width: max-content;
+    display: flex;
+    gap: 16px;
+    font-size: 24px;
+    border-radius: 4px;
+    background-color: rgb(40, 40, 40, 70);
+  }
+
+  .hero__highlight {
+    font-size: 40px;
+  }
+
+  .hero__button {
+    width: 190px;
+    height: 96px;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 24px;
+    font-weight: bold;
+    color: #222222;
+    cursor: pointer;
+  }
+
+  .hero__image-wrapper {
+    width: 100%;
+  }
+
+  .hero__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
+
+  @media only screen and (max-width: 1520px) {
+    .hero__content {
+      padding-left: 100px;
+      gap: 16px;
+    }
+
+    .hero__title {
+      font-size: 48px;
+    }
+
+    .hero__subtitle {
+      font-size: 20px;
+    }
+
+    .hero__item {
+      height: 32px;
+      font-size: 16px;
+    }
+
+    .hero__highlight {
+      font-size: 32px;
+    }
+
+    .hero__button {
+      width: 120px;
+      height: 60px;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .hero__content {
+      padding-left: 60px;
+      gap: 12px;
+    }
+
+    .hero__title {
+      font-size: 32px;
+    }
+
+    .hero__subtitle {
+      font-size: 20px;
+    }
+
+    .hero__item {
+      height: 20px;
+      font-size: 12px;
+    }
+
+    .hero__highlight {
+      font-size: 20px;
+    }
+
+    .hero__button {
+      width: 100px;
+      height: 44px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .hero {
+      padding-top: 100px;
+      display: block;
+    }
+
+    .hero__content {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .hero__image {
+      display: none;
+    }
+  }

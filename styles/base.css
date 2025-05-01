@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  ul, nav, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .page {
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    background-color: #282829;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  .nav-item {
+    color: white;
+    text-decoration-line: none;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  @media only screen and (max-width: 1520px) {
+    .nav {
+      gap: 24px;
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .nav {
+      gap: 20px;
+      font-size: 12px;
+    }
+  }
